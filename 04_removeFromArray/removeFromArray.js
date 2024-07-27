@@ -1,6 +1,6 @@
-const removeFromArray = function(array, out) {
+const removeFromArray = function(array, ...out) {
     let fitlered = array.filter(function filterout (item) {
-        return item !== out;
+        return !out.includes(item);
     })
     return fitlered
 };
